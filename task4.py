@@ -9,7 +9,7 @@ class Comment:
         if isinstance(reply, Comment):
             self.replies.append(reply)
         else:
-            raise TypeError("Reply muse be an instance of Comment.")
+            raise TypeError("Reply must be an instance of Comment.")
 
     def remove_reply(self):
         self.value = "Цей коментар було видалено."
